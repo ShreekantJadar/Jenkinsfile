@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'mvn --version'
                 echo "My first Job from github"
             }
         }
