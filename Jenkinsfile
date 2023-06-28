@@ -3,8 +3,13 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo "My first Job from github"
+                echo "My first webhook Job from github"
+        stage('test') {
+            steps {
+                echo "My webhook Job from github"
+               }
             }
         }
     }
+}
 }
