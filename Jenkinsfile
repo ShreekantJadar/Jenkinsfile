@@ -1,16 +1,11 @@
 pipeline {
     agent any
+
     stages {
-        stage('build') {
+        stage('Hello') {
             steps {
-                echo "My first webhook Job from github"
-    stages {
-        stage('test') {
-            steps {
-                echo "My webhook Job from github jenkins file"
-               }
+                echo 'Hello World'
             }
         }
     }
-}
 }
